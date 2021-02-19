@@ -5,7 +5,6 @@
 			$className = str_replace('PHPMVC\\','', $className);
 			$className = strtolower($className);
 			$className = $className .'.php';
-			
 			if(file_exists(APP_PATH .DS. $className)){	
 				require_once APP_PATH .DS. $className;
 			}
